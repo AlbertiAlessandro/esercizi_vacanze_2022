@@ -9,9 +9,18 @@ struct Frazione{
 
 void prodotto(Frazione a, Frazione b){
     Frazione c;
+    int risultato;
     c.numeratore = a.numeratore * b.numeratore;
     c.denominatore = a.denominatore * b.denominatore;
     cout << c.numeratore << " / " << c.denominatore << endl;
+    cout <<"RISULTATO: " << endl;
+    if (c.numeratore / c.denominatore == 0){
+        risultato = c.numeratore / c.denominatore;
+        cout << risultato << endl;
+    }
+    else
+        cout << c.numeratore << " / " << c.denominatore << endl;
+
 }
 
 void semplifica(Frazione a, Frazione b) {
@@ -57,10 +66,10 @@ int main() {
     cin >> b.numeratore;
     cout << "Inserisci il denominatore della seconda frazione: " << endl;
     cin >> b.denominatore;
-    cout << "PRODOTTO DELLE FRAZIONI: " << endl;
-    prodotto(a, b);
     cout << "FRAZIONE SEMPLIFICATA: " << endl;
     semplifica(a, b);
+    cout << "PRODOTTO DELLE FRAZIONI: " << endl;
+    prodotto(a, b);
 
 
 

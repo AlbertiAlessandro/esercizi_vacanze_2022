@@ -4,7 +4,6 @@
 using namespace std;
 
 
-
 struct Coordinate{
     int x;
     int y;
